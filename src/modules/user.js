@@ -1,6 +1,5 @@
 import {createAction, handleActions} from "redux-actions";
 import {takeLatest, call} from "redux-saga/effects";
-import { callExpression } from "../../../../../AppData/Local/Microsoft/TypeScript/4.2/node_modules/@babel/types/lib/index";
 import * as authAPI from "../lib/api/auth"
 import createRequestSaga from "../lib/createRequestSaga";
 

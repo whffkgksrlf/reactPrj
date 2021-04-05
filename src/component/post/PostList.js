@@ -78,7 +78,7 @@ const PostItem = ({post}) => {
             </h2>
             <SubInfo 
                 username={user.username}
-                puclishedDate={new Date(publishedDate)}
+                publishedDate={publishedDate}
             />
             <Tags tags={tags} />
             <p>{body}</p>
@@ -106,7 +106,7 @@ const PostList = ({posts, loading, error, showWriteButton}) => {
             {!loading && posts && (
                 <div>
                     {posts.map(post =>(
-                        <PostItem post={post} key={post._id}></PostItem>
+                        <PostItem post={post.post} key={post._id}></PostItem>
                     ))}
                 </div>
             )}
